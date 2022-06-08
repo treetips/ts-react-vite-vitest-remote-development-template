@@ -1,0 +1,11 @@
+# LTS Code Name https://nodejs.org/ja/about/releases/
+# LTS Docker Image https://hub.docker.com/_/node?tab=tags&page=1&name=gallium
+FROM node:gallium-alpine3.15
+
+RUN apk --update add tzdata && \
+    cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
+    apk del tzdata && \
+    apk add git \
+    rm -rf /var/cache/apk/*
+
+WORKDIR /vscode/workspace

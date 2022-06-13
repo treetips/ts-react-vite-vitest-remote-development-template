@@ -4,7 +4,7 @@ services:
   nodejs:
     build:
       context: .
-      dockerfile: ./docker/nodejs/Dockerfile
+      dockerfile: ./docker/nodejs/Dockerfile.debian
     image: treetips/frontend-nodejs:latest
     working_dir: /vscode/workspace
     tty: true
@@ -12,4 +12,5 @@ services:
       - 3000:3000
     volumes:
       - .:/vscode/workspace
+      - ./docker/nodejs/.bashrc:/root/.bashrc
     command: /bin/sh -c "while sleep 1000; do :; done"

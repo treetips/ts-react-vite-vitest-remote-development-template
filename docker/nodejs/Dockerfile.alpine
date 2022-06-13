@@ -5,7 +5,7 @@ FROM node:gallium-alpine3.15
 RUN apk --update add tzdata && \
     cp /usr/share/zoneinfo/Asia/Tokyo /etc/localtime && \
     apk del tzdata && \
-    apk add git \
+    apk add git curl exa \
     rm -rf /var/cache/apk/*
 
 WORKDIR /vscode/workspace

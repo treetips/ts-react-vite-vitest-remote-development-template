@@ -1,0 +1,15 @@
+# LTS Code Name https://nodejs.org/ja/about/releases/
+# LTS Docker Image https://hub.docker.com/_/node?tab=tags&page=1&name=gallium
+FROM node:gallium-bullseye
+
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+      git exa locales && \
+    sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f && \
+    apt-get -y clean && \
+    rm -rf /var/lib/apt/lists/*
+RUN sed -i -E 's/# (ja_JP.UTF-8)/\1/' /etc/locale.gen && \
+    locale-gen
+ENV LANG ja_JP.UTF-8
+
+WORKDIR /vscode/workspace

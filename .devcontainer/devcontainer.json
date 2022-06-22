@@ -17,7 +17,9 @@
     "yzhang.markdown-all-in-one",
     "ZixuanChen.vitest-explorer",
     "IronGeek.vscode-env",
-    "formulahendry.auto-rename-tag"
+    "formulahendry.auto-rename-tag",
+    "usernamehw.errorlens",
+    "oderwat.indent-rainbow"
   ],
   // "forwardPorts": [],
   // "runServices": [],

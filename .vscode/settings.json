@@ -13,18 +13,15 @@
     ".idea": true,
     "**/*.svg": true
   },
+  "breadcrumbs.enabled": true,
   "files.insertFinalNewline": true,
   "editor.bracketPairColorization.enabled": true,
+  "editor.copyWithSyntaxHighlighting": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.guides.bracketPairs": true,
   "editor.guides.indentation": true,
   "editor.guides.highlightActiveIndentation": true,
   "editor.renderControlCharacters": true,
-  "workbench.editor.closeEmptyGroups": true,
-  "workbench.editor.enablePreview": false,
-  "breadcrumbs.enabled": true,
-  "editor.copyWithSyntaxHighlighting": false,
-  "javascript.format.enable": false,
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "eslint.validate": ["typescript", "typescriptreact"],
   "files.associations": {
     "*.env.local": "env",
@@ -36,6 +33,7 @@
     "*.env.production.local": "env"
   },
   // typescript
+  "typescript.format.enable": false,
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
   "typescript.inlayHints.parameterNames.enabled": "all",
@@ -43,12 +41,15 @@
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": false,
   // javascript
+  "javascript.format.enable": false,
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": false,
+  "workbench.editor.closeEmptyGroups": true,
+  "workbench.editor.enablePreview": false,
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
   "[typescript]": {

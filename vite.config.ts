@@ -2,6 +2,7 @@
 
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
+import checker from "vite-plugin-checker";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,7 +16,16 @@ export default defineConfig({
     outDir: "../build",
     emptyOutDir: true,
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+    checker({
+      typescript: true,
+      vueTsc: false,
+      eslint: {
+        lintCommand: 'eslint "../src/**/*.{ts,tsx}"',
+      },
+    }),
+  ],
   test: {
     globals: true,
     environment: "jsdom",

@@ -9,7 +9,7 @@
 | TypeScript            | latest  |
 | Node.js               | v16 LTS |
 | React                 | v18     |
-| Vite                  | v2      |
+| Vite                  | v3      |
 | SCSS                  | latest  |
 | ESLint                | latest  |
 | Prettier              | latest  |

@@ -35,6 +35,17 @@ brew install --cask \
   docker
 ```
 
+### Create .huskyrc
+
+```sh
+cat << EOT > ~/.huskyrc
+test -f ~/.bash_profile && source ~/.bash_profile
+test -f ~/.bashrc && source ~/.bashrc
+test -f ~/.zprofile && source ~/.zprofile
+test -f ~/.zshrc && source ~/.zshrc
+EOT
+```
+
 ## Usage
 
 https://user-images.githubusercontent.com/12574048/172644178-72c48ca8-52f7-4f49-957e-ab966a82f14d.mp4

@@ -21,6 +21,8 @@ dist-ssr
 *.sln
 *.sw?
 
+# ESLint
+.eslintcache
 # Vite
 build
 # Vitest

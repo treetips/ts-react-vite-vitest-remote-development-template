@@ -7,6 +7,7 @@
 | Docker Desktop        | latest  |
 | VSCode                | latest  |
 | TypeScript            | latest  |
+| fnm                   | latest  |
 | Node.js               | v16 LTS |
 | React                 | v18     |
 | Vite                  | v3      |
@@ -35,14 +36,41 @@ brew install --cask \
   docker
 ```
 
-### Create .huskyrc
+### Install fnm
 
 ```sh
-cat << EOT > ~/.huskyrc
-test -f ~/.bash_profile && source ~/.bash_profile
-test -f ~/.bashrc && source ~/.bashrc
-test -f ~/.zprofile && source ~/.zprofile
-test -f ~/.zshrc && source ~/.zshrc
+brew install fnm
+
+test $(cat ~/.zshrc | grep 'eval "$(fnm env --use-on-cd)"' | wc -l | xargs) -eq 0 && echo 'eval "$(fnm env --use-on-cd)"' >> ~/.zshrc
+```
+
+### Install Node.js
+
+```sh
+version="$(fnm ls-remote | grep "Gallium" | tail -1 | xargs)"
+fnm install ${version}
+fnm use ${version}
+fnm default ${version}
+```
+
+### Create .huskyrc
+
+For GUI applications, set the path in [.huskyrc](https://typicode.github.io/husky/#/?id=command-not-found) because sometimes the path is not set and npm command not found.
+
+```sh
+cat << 'EOT' > ~/.huskyrc
+if [[ -d '/home/linuxbrew/.linuxbrew' ]]; then
+  # Linux/WSL
+  HOMEBREW_HOME='/home/linuxbrew/.linuxbrew'
+elif [[ -d '/opt/homebrew' ]]; then
+  # Apple Silicon Mac
+  HOMEBREW_HOME='/opt/homebrew'
+else
+  # Intel Mac
+  HOMEBREW_HOME='/usr/local'
+fi
+eval "$($HOMEBREW_HOME/bin/brew shellenv)"
+eval "$($HOMEBREW_HOME/bin/fnm env)"
 EOT
 ```
 

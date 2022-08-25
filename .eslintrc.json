@@ -16,7 +16,8 @@
       "jsx": true
     },
     "ecmaVersion": 13,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": "./tsconfig.json"
   },
   "plugins": [
     "react",
@@ -34,7 +35,14 @@
       "error",
       { "checkFragmentShorthand": true, "warnOnDuplicates": true }
     ],
-    "no-console": "warn"
+    "no-console": "warn",
+    "@typescript-eslint/no-floating-promises": [
+      "error",
+      {
+        "ignoreIIFE": true
+      }
+    ],
+    "@typescript-eslint/no-misused-promises": "error"
   },
   "ignorePatterns": ["vite.config.ts", "vitest.setup.ts"]
 }

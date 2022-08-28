@@ -40,6 +40,7 @@
   "typescript.inlayHints.parameterTypes.enabled": true,
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": false,
+  "typescript.referencesCodeLens.enabled": true,
   // javascript
   "javascript.format.enable": false,
   "javascript.inlayHints.enumMemberValues.enabled": true,
@@ -48,6 +49,7 @@
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": false,
+  "javascript.referencesCodeLens.enabled": true,
   "workbench.editor.closeEmptyGroups": true,
   "workbench.editor.enablePreview": false,
   "workbench.tree.indent": 16,

@@ -27,6 +27,14 @@
     "testing-library"
   ],
   "rules": {
+    "curly": "error",
+    "eqeqeq": "error",
+    "no-else-return": "error",
+    "no-empty-pattern": "error",
+    "no-param-reassign": "error",
+    "no-redeclare": "error",
+    "no-useless-return": "error",
+    "radix": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/react-in-jsx-scope": "off",

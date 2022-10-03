@@ -11,6 +11,7 @@
 | Node.js               | v16 LTS |
 | React                 | v18     |
 | Vite                  | v3      |
+| React Router          | v6      |
 | SCSS                  | latest  |
 | ESLint                | latest  |
 | Prettier              | latest  |

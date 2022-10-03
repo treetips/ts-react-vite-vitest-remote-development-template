@@ -1,0 +1,12 @@
+ul.menu-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  li {
+    display: flex;
+    margin-right: 20px;
+    a {
+      color: white;
+    }
+  }
+}

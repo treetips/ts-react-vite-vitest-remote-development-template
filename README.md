@@ -34,10 +34,13 @@ Install [homebrew](https://brew.sh/) .
 ```sh
 brew install --cask \
   visual-studio-code \
-  docker
+  docker \
+  fnm
 ```
 
-### Install fnm
+### fnm
+
+#### Setup --use-on-cd
 
 ```sh
 brew install fnm
@@ -48,10 +51,8 @@ test $(cat ~/.zshrc | grep 'eval "$(fnm env --use-on-cd)"' | wc -l | xargs) -eq 
 ### Install Node.js
 
 ```sh
-version="$(fnm ls-remote | grep "Gallium" | tail -1 | xargs)"
-fnm install ${version}
-fnm use ${version}
-fnm default ${version}
+# The version described in .node-version is installed
+fnm install
 ```
 
 ### Create .huskyrc

@@ -57,5 +57,10 @@
       }
     ]
   },
-  "ignorePatterns": ["vite.config.ts", "vitest.setup.ts"]
+  "ignorePatterns": ["vite.config.ts", "vitest.setup.ts"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }

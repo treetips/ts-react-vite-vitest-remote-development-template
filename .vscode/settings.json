@@ -18,9 +18,11 @@
   "editor.bracketPairColorization.enabled": true,
   "editor.copyWithSyntaxHighlighting": false,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.hover.sticky": true,
   "editor.guides.bracketPairs": true,
   "editor.guides.indentation": true,
   "editor.guides.highlightActiveIndentation": true,
+  "editor.stickyScroll.enabled": false,
   "editor.renderControlCharacters": true,
   "eslint.validate": ["typescript", "typescriptreact"],
   "files.associations": {
@@ -32,7 +34,9 @@
     "*.env.production": "env",
     "*.env.production.local": "env"
   },
+  "git.mergeEditor": true,
   // typescript
+  "typescript.suggest.autoImports": true,
   "typescript.format.enable": false,
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
@@ -42,8 +46,9 @@
   "typescript.inlayHints.variableTypes.enabled": false,
   "typescript.implementationsCodeLens.enabled": true,
   "typescript.referencesCodeLens.enabled": true,
-  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": false,
   // javascript
+  "javascript.suggest.autoImports": true,
   "javascript.format.enable": false,
   "javascript.inlayHints.enumMemberValues.enabled": true,
   "javascript.inlayHints.functionLikeReturnTypes.enabled": true,
@@ -52,7 +57,8 @@
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": false,
   "javascript.referencesCodeLens.enabled": true,
-  "javascript.referencesCodeLens.showOnAllFunctions": true,
+  "javascript.referencesCodeLens.showOnAllFunctions": false,
+  "markdown.validate.enabled": true,
   "workbench.editor.closeEmptyGroups": true,
   "workbench.editor.enablePreview": false,
   "workbench.tree.indent": 16,

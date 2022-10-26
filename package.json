@@ -19,10 +19,8 @@
     "@mui/material": "^5.10.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.38.0",
     "react-icons": "^4.6.0",
-    "react-router-dom": "^6.4.2",
-    "zod": "^3.19.1"
+    "react-router-dom": "^6.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",

@@ -4,11 +4,11 @@
 
 | Name                  | Version |
 | --------------------- | ------- |
-| Docker Desktop        | latest  |
 | VSCode                | latest  |
-| TypeScript            | latest  |
+| Docker Desktop        | latest  |
 | fnm                   | latest  |
-| Node.js               | v16 LTS |
+| Node.js               | v18 LTS |
+| TypeScript            | latest  |
 | React                 | v18     |
 | Vite                  | v3      |
 | React Router          | v6      |

@@ -10,7 +10,7 @@
 | Node.js               | v18 LTS |
 | TypeScript            | latest  |
 | React                 | v18     |
-| Vite                  | v3      |
+| Vite                  | v4      |
 | React Router          | v6      |
 | SCSS                  | latest  |
 | ESLint                | latest  |

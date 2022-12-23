@@ -33,6 +33,7 @@
     "no-empty-pattern": "error",
     "no-param-reassign": "error",
     "no-redeclare": "error",
+    "no-return-await": "error",
     "no-useless-return": "error",
     "radix": "error",
     "react-hooks/rules-of-hooks": "error",

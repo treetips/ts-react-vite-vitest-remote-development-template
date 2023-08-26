@@ -4,6 +4,10 @@ import { LayoutPresenter } from ".";
 type Props = {
   pageTitle: string;
   showPageTitle?: boolean;
+  breadcrumbs?: {
+    label: string;
+    href: string;
+  }[];
   children: ReactNode;
 };
 
@@ -12,6 +16,7 @@ const drawerWidth = 240;
 export const Layout = ({
   pageTitle,
   showPageTitle = true,
+  breadcrumbs,
   children,
 }: Props) => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -28,6 +33,7 @@ export const Layout = ({
       drawerWidth={drawerWidth}
       openDrawer={mobileOpen}
       onToggleDrawer={handleDrawerToggle}
+      breadcrumbs={breadcrumbs}
     >
       {children}
     </LayoutPresenter>

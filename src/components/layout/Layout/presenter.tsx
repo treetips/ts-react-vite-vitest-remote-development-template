@@ -2,6 +2,7 @@ import { Home as HomeIcon, Menu as MenuIcon } from "@mui/icons-material";
 import {
   AppBar,
   Box,
+  Breadcrumbs,
   CssBaseline,
   Divider,
   Drawer,
@@ -16,7 +17,7 @@ import {
 } from "@mui/material";
 import { ComponentProps, ReactNode } from "react";
 import { VscDebug as VscDebugIcon } from "react-icons/vsc";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ContentHeader } from "../ContentHeader";
 import { Layout } from "./container";
 
@@ -32,7 +33,7 @@ type Props = {
   onToggleDrawer: () => void;
 } & Pick<
   ComponentProps<typeof Layout>,
-  "pageTitle" | "showPageTitle" | "children"
+  "pageTitle" | "showPageTitle" | "breadcrumbs" | "children"
 >;
 
 export const LayoutPresenter = ({
@@ -43,6 +44,7 @@ export const LayoutPresenter = ({
   drawerWidth,
   openDrawer,
   onToggleDrawer,
+  breadcrumbs,
   children,
 }: Props) => {
   const MenuListItem = ({
@@ -161,7 +163,23 @@ export const LayoutPresenter = ({
               <ContentHeader pageTitle={pageTitle} />
             </Box>
           )}
-          <Box p={2}>{children}</Box>
+
+          {breadcrumbs?.length && (
+            <Box mt={1} mx={2}>
+              <Breadcrumbs aria-label="breadcrumb">
+                <Link to="/">Home</Link>
+                {breadcrumbs.map((breadcrumb) => (
+                  <Link key={breadcrumb.href} to={breadcrumb.href}>
+                    {breadcrumb.label}
+                  </Link>
+                ))}
+              </Breadcrumbs>
+            </Box>
+          )}
+
+          <Box p={2} textAlign="left">
+            {children}
+          </Box>
         </Box>
       </Box>
     </Box>

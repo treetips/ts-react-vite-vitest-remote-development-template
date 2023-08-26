@@ -4,7 +4,7 @@ import { Layout } from "../Layout";
 
 type Props = Pick<ComponentProps<typeof Layout>, "pageTitle">;
 
-export const ContentHeaderPresenter = ({ pageTitle }: Props) => {
+export const ContentHeaderPresenter: React.FC<Props> = ({ pageTitle }) => {
   return (
     <Card
       elevation={8}

@@ -4,21 +4,16 @@ import { LayoutPresenter } from ".";
 type Props = {
   pageTitle: string;
   showPageTitle?: boolean;
-  breadcrumbs?: {
-    label: string;
-    href: string;
-  }[];
   children: React.ReactNode;
 };
 
 const drawerWidth = 240;
 
-export const Layout = ({
+export const Layout: React.FC<Props> = ({
   pageTitle,
   showPageTitle = true,
-  breadcrumbs,
   children,
-}: Props) => {
+}) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
@@ -27,13 +22,12 @@ export const Layout = ({
 
   return (
     <LayoutPresenter
-      siteTitleText="Example Site"
+      siteTitleText="Vite Example"
       pageTitle={pageTitle}
       showPageTitle={showPageTitle}
       drawerWidth={drawerWidth}
       openDrawer={mobileOpen}
       onToggleDrawer={handleDrawerToggle}
-      breadcrumbs={breadcrumbs}
     >
       {children}
     </LayoutPresenter>

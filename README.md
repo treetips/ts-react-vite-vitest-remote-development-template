@@ -1,22 +1,26 @@
-# vite-ts-react-hook-form-valibot-example
+# ts-react-vite-vitest-remote-development-template
 
 ## Features
 
-- VSCode
-- TypeScript
-- React
-- Vite
-- MUI
-- React Router
-- React Hook Form
-- Valibot
-- ESLint
-- Prettier
-- Vitest
+| Name                  | Version |
+| --------------------- | ------- |
+| VSCode                | latest  |
+| Docker Desktop        | latest  |
+| fnm                   | latest  |
+| Node.js               | v18 LTS |
+| TypeScript            | latest  |
+| React                 | v18     |
+| Vite                  | v4      |
+| React Router          | v6      |
+| SCSS                  | latest  |
+| ESLint                | latest  |
+| Prettier              | latest  |
+| Vitest                | latest  |
+| React Testing Library | latest  |
 
 ## Requirements
 
-- Rancher Desktop
+- Docker Desktop
 - Visual Studio Code
 
 ## Setup
@@ -30,7 +34,7 @@ Install [homebrew](https://brew.sh/) .
 ```sh
 brew install --cask \
   visual-studio-code \
-  rancher \
+  docker \
   fnm
 ```
 
@@ -74,6 +78,4 @@ EOT
 
 ## Usage
 
-```shel
-npm run dev
-```
+https://user-images.githubusercontent.com/12574048/172644178-72c48ca8-52f7-4f49-957e-ab966a82f14d.mp4

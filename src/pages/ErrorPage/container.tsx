@@ -1,9 +1,9 @@
 import { ErrorPagePresenter } from ".";
 import { Layout } from "../../components/layout/Layout";
 
-export const ErrorPage = () => {
+export const ErrorPage: React.FC = () => {
   return (
-    <Layout pageTitle="Error" breadcrumbs={[{ label: "Error", href: "/404" }]}>
+    <Layout pageTitle="Error">
       <ErrorPagePresenter />
     </Layout>
   );

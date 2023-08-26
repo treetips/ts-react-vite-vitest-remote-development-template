@@ -1,12 +1,7 @@
-import {
-  Add as AddIcon,
-  Home as HomeIcon,
-  Menu as MenuIcon,
-} from "@mui/icons-material";
+import { Home as HomeIcon, Menu as MenuIcon } from "@mui/icons-material";
 import {
   AppBar,
   Box,
-  Breadcrumbs,
   CssBaseline,
   Divider,
   Drawer,
@@ -21,7 +16,7 @@ import {
 } from "@mui/material";
 import React, { ComponentProps } from "react";
 import { VscDebug as VscDebugIcon } from "react-icons/vsc";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { ContentHeader } from "../ContentHeader";
 import { Layout } from "./container";
 
@@ -37,10 +32,10 @@ type Props = {
   onToggleDrawer: () => void;
 } & Pick<
   ComponentProps<typeof Layout>,
-  "pageTitle" | "showPageTitle" | "breadcrumbs" | "children"
+  "pageTitle" | "showPageTitle" | "children"
 >;
 
-export const LayoutPresenter = ({
+export const LayoutPresenter: React.FC<Props> = ({
   window,
   siteTitleText,
   pageTitle,
@@ -48,9 +43,8 @@ export const LayoutPresenter = ({
   drawerWidth,
   openDrawer,
   onToggleDrawer,
-  breadcrumbs,
   children,
-}: Props) => {
+}) => {
   const MenuListItem = ({
     url,
     text,
@@ -79,7 +73,6 @@ export const LayoutPresenter = ({
       <Divider />
       <List disablePadding>
         <MenuListItem url="/" text="Home" icon={<HomeIcon />} />
-        <MenuListItem url="/form" text="Form Example" icon={<AddIcon />} />
         <MenuListItem
           url="/404"
           text="Debug 404"
@@ -168,22 +161,7 @@ export const LayoutPresenter = ({
               <ContentHeader pageTitle={pageTitle} />
             </Box>
           )}
-
-          {breadcrumbs?.length && (
-            <Box mt={1} mx={2}>
-              <Breadcrumbs aria-label="breadcrumb">
-                <Link to="/">Home</Link>
-                {breadcrumbs.map((breadcrumb) => (
-                  <Link key={breadcrumb.href} to={breadcrumb.href}>
-                    {breadcrumb.label}
-                  </Link>
-                ))}
-              </Breadcrumbs>
-            </Box>
-          )}
-          <Box p={2} textAlign="left">
-            {children}
-          </Box>
+          <Box p={2}>{children}</Box>
         </Box>
       </Box>
     </Box>

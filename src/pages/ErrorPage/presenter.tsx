@@ -4,7 +4,7 @@ type Props = {
   statusCode?: number;
 };
 
-export const ErrorPagePresenter: React.FC<Props> = ({ statusCode = 404 }) => {
+export const ErrorPagePresenter = ({ statusCode = 404 }: Props) => {
   const component = ((code: number) => {
     switch (code) {
       case 404:

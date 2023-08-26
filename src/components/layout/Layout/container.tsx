@@ -1,19 +1,19 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { LayoutPresenter } from ".";
 
 type Props = {
   pageTitle: string;
   showPageTitle?: boolean;
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 const drawerWidth = 240;
 
-export const Layout: React.FC<Props> = ({
+export const Layout = ({
   pageTitle,
   showPageTitle = true,
   children,
-}) => {
+}: Props) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {

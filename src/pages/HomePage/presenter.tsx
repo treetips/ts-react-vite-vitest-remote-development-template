@@ -5,7 +5,7 @@ type Props = {
   onCound: () => void;
 };
 
-export const HomePagePresenter: React.FC<Props> = ({ count, onCound }) => {
+export const HomePagePresenter = ({ count, onCound }: Props) => {
   return (
     <div>
       <img src={logo} className="app-logo" alt="logo" />

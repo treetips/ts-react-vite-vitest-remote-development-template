@@ -14,7 +14,7 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import React, { ComponentProps } from "react";
+import { ComponentProps, ReactNode } from "react";
 import { VscDebug as VscDebugIcon } from "react-icons/vsc";
 import { NavLink } from "react-router-dom";
 import { ContentHeader } from "../ContentHeader";
@@ -35,7 +35,7 @@ type Props = {
   "pageTitle" | "showPageTitle" | "children"
 >;
 
-export const LayoutPresenter: React.FC<Props> = ({
+export const LayoutPresenter = ({
   window,
   siteTitleText,
   pageTitle,
@@ -44,7 +44,7 @@ export const LayoutPresenter: React.FC<Props> = ({
   openDrawer,
   onToggleDrawer,
   children,
-}) => {
+}: Props) => {
   const MenuListItem = ({
     url,
     text,
@@ -52,7 +52,7 @@ export const LayoutPresenter: React.FC<Props> = ({
   }: {
     url: string;
     text: string;
-    icon: React.ReactNode;
+    icon: ReactNode;
   }) => {
     return (
       <Box>

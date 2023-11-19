@@ -1,0 +1,201 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Simple working test > should render correctly 1`] = `
+<div
+  class="App"
+>
+  <div
+    class="MuiBox-root css-k008qs"
+  >
+    <header
+      class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation4 MuiAppBar-root MuiAppBar-colorPrimary MuiAppBar-positionFixed mui-fixed css-zxtyt4-MuiPaper-root-MuiAppBar-root"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      >
+        <button
+          aria-label="open drawer"
+          class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit MuiIconButton-edgeStart MuiIconButton-sizeMedium css-6iz4mj-MuiButtonBase-root-MuiIconButton-root"
+          tabindex="0"
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+            data-testid="MenuIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+          <span
+            class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+          />
+        </button>
+        <div
+          class="MuiTypography-root MuiTypography-h6 MuiTypography-noWrap css-8u39c-MuiTypography-root"
+        >
+          Vite Example
+        </div>
+      </div>
+    </header>
+    <nav
+      class="MuiBox-root css-1o5pq7n"
+    >
+      <div
+        class="MuiDrawer-root MuiDrawer-docked css-d9ml5t-MuiDrawer-docked"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation MuiPaper-elevation0 MuiDrawer-paper MuiDrawer-paperAnchorLeft MuiDrawer-paperAnchorDockedLeft css-12i7wg6-MuiPaper-root-MuiDrawer-paper"
+        >
+          <div>
+            <div
+              class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+            />
+            <hr
+              class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+            />
+            <ul
+              class="MuiList-root css-1mk9mw3-MuiList-root"
+            >
+              <div
+                class="MuiBox-root css-0"
+              >
+                <a
+                  aria-current="page"
+                  class="MuiListItem-root MuiListItem-gutters css-1nxmd3h-MuiListItem-root active"
+                  href="/"
+                >
+                  <div
+                    class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                    >
+                      <svg
+                        aria-hidden="true"
+                        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                        data-testid="HomeIcon"
+                        focusable="false"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                      >
+                        Home
+                      </span>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </div>
+                </a>
+                <hr
+                  class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                />
+              </div>
+              <div
+                class="MuiBox-root css-0"
+              >
+                <a
+                  class="MuiListItem-root MuiListItem-gutters css-1nxmd3h-MuiListItem-root"
+                  href="/404"
+                >
+                  <div
+                    class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters MuiListItemButton-root MuiListItemButton-gutters css-16ac5r2-MuiButtonBase-root-MuiListItemButton-root"
+                    role="button"
+                    tabindex="0"
+                  >
+                    <div
+                      class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+                    >
+                      <svg
+                        fill="currentColor"
+                        height="25"
+                        stroke="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 24 24"
+                        width="25"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M3.463 12.86l-.005-.07.005.07zm7.264.69l-3.034-3.049 1.014-1.014 3.209 3.225 3.163-3.163 1.014 1.014-3.034 3.034 3.034 3.05-1.014 1.014-3.209-3.225L8.707 17.6l-1.014-1.014 3.034-3.034z"
+                        />
+                        <path
+                          clip-rule="evenodd"
+                          d="M16.933 5.003V6h1.345l2.843-2.842 1.014 1.014-2.692 2.691.033.085a13.75 13.75 0 0 1 .885 4.912c0 .335-.011.667-.034.995l-.005.075h3.54v1.434h-3.72l-.01.058c-.303 1.653-.891 3.16-1.692 4.429l-.06.094 3.423 3.44-1.017 1.012-3.274-3.29-.099.11c-1.479 1.654-3.395 2.646-5.483 2.646-2.12 0-4.063-1.023-5.552-2.723l-.098-.113-3.209 3.208-1.014-1.014 3.366-3.365-.059-.095c-.772-1.25-1.34-2.725-1.636-4.34l-.01-.057H0V12.93h3.538l-.005-.075a14.23 14.23 0 0 1-.034-.995c0-1.743.31-3.39.863-4.854l.032-.084-2.762-2.776L2.65 3.135 5.5 6h1.427v-.997a5.003 5.003 0 0 1 10.006 0zm-8.572 0V6H15.5v-.997a3.569 3.569 0 0 0-7.138 0zm9.8 2.522l-.034-.09H5.733l-.034.09a12.328 12.328 0 0 0-.766 4.335c0 2.76.862 5.201 2.184 6.92 1.32 1.716 3.036 2.649 4.813 2.649 1.777 0 3.492-.933 4.813-2.65 1.322-1.718 2.184-4.16 2.184-6.919 0-1.574-.28-3.044-.766-4.335z"
+                          fill-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div
+                      class="MuiListItemText-root css-tlelie-MuiListItemText-root"
+                    >
+                      <span
+                        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-10hburv-MuiTypography-root"
+                      >
+                        Debug 404
+                      </span>
+                    </div>
+                    <span
+                      class="MuiTouchRipple-root css-8je8zh-MuiTouchRipple-root"
+                    />
+                  </div>
+                </a>
+                <hr
+                  class="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+                />
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main
+      class="MuiBox-root css-1trjfsx"
+    >
+      <div
+        class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-hyum1k-MuiToolbar-root"
+      />
+      <div
+        class="MuiBox-root css-0"
+      >
+        <div
+          class="MuiBox-root css-ph8oxj"
+        >
+          <div>
+            <img
+              alt="logo"
+              class="app-logo"
+              src="/assets/images/logo.svg"
+            />
+            <h2>
+              React, Vite, Vitest, Remote Development Example !
+            </h2>
+            <div>
+              <button
+                type="button"
+              >
+                count is: 
+                0
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+`;

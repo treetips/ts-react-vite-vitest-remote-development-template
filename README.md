@@ -7,10 +7,10 @@
 | VSCode                | latest  |
 | Docker Desktop        | latest  |
 | fnm                   | latest  |
-| Node.js               | v18 LTS |
+| Node.js               | v20 LTS |
 | TypeScript            | latest  |
 | React                 | v18     |
-| Vite                  | v4      |
+| Vite                  | v5      |
 | React Router          | v6      |
 | SCSS                  | latest  |
 | ESLint                | latest  |

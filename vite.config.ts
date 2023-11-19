@@ -8,7 +8,8 @@ import checker from "vite-plugin-checker";
 export default defineConfig(
   (
     // https://ja.vitejs.dev/config/#%E6%9D%A1%E4%BB%B6%E4%BB%98%E3%81%8D%E8%A8%AD%E5%AE%9A
-    { command }
+    { command,
+    mode }
   ) => {
     const src = command === "serve" ? "../src" : "./src";
     return {
@@ -24,7 +25,7 @@ export default defineConfig(
       },
       plugins: [
         react(),
-        checker({
+        mode !== "test" && checker({
           typescript: true,
           vueTsc: false,
           eslint: {
@@ -36,6 +37,7 @@ export default defineConfig(
         globals: true,
         environment: "jsdom",
         setupFiles: "./vitest.setup.ts",
+        css: true,
       },
     };
   }

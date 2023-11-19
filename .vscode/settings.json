@@ -1,7 +1,6 @@
 {
   "files.exclude": {
     "**/node_modules": true,
-    "**/__snapshots__": true,
     "**/.DS_Store": true
   },
   "search.exclude": {

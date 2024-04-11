@@ -3,24 +3,28 @@
   "dockerComposeFile": "../docker-compose.yml",
   "service": "nodejs",
   "workspaceFolder": "/vscode/workspace",
-  "settings": {
-    "files.watcherExclude": {
-      "**/build/**": true
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.watcherExclude": {
+          "**/build/**": true
+        }
+      },
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "editorconfig.editorconfig",
+        "ms-azuretools.vscode-docker",
+        "vadimcn.vscode-lldb",
+        "yzhang.markdown-all-in-one",
+        "vitest.explorer",
+        "IronGeek.vscode-env",
+        "formulahendry.auto-rename-tag",
+        "usernamehw.errorlens",
+        "oderwat.indent-rainbow"
+      ]
     }
   },
-  "extensions": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "editorconfig.editorconfig",
-    "ms-azuretools.vscode-docker",
-    "vadimcn.vscode-lldb",
-    "yzhang.markdown-all-in-one",
-    "ZixuanChen.vitest-explorer",
-    "IronGeek.vscode-env",
-    "formulahendry.auto-rename-tag",
-    "usernamehw.errorlens",
-    "oderwat.indent-rainbow"
-  ],
   // "forwardPorts": [],
   // "runServices": [],
   // "shutdownAction": "none",

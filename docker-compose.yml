@@ -1,3 +1,4 @@
+# https://docs.docker.com/compose/compose-file/compose-versioning/#compatibility-matrix
 version: "3.8"
 
 services:
@@ -11,6 +12,12 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - .:/vscode/workspace
+      - .:/vscode/workspace:cached
       - ./docker/nodejs/.bashrc:/root/.bashrc
+      # Volue Trick https://jdlm.info/articles/2016/03/06/lessons-building-node-app-docker.html
+      - node-modules:/vscode/workspace/node_modules
     command: /bin/sh -c "while sleep 1000; do :; done"
+
+volumes:
+  node-modules:
+    driver: local

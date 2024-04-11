@@ -1,6 +1,6 @@
 # LTS Code Name https://nodejs.org/ja/about/releases/
 # LTS Docker Image https://hub.docker.com/_/node?tab=tags&page=1&name=gallium
-FROM node:gallium-bullseye
+FROM node:lts-iron
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \

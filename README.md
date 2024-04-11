@@ -5,7 +5,7 @@
 | Name                  | Version |
 | --------------------- | ------- |
 | VSCode                | latest  |
-| Docker Desktop        | latest  |
+| Rancher Desktop       | latest  |
 | fnm                   | latest  |
 | Node.js               | v20 LTS |
 | TypeScript            | latest  |
@@ -20,7 +20,7 @@
 
 ## Requirements
 
-- Docker Desktop
+- Rancher Desktop
 - Visual Studio Code
 
 ## Setup
@@ -34,8 +34,11 @@ Install [homebrew](https://brew.sh/) .
 ```sh
 brew install --cask \
   visual-studio-code \
-  docker \
   fnm
+```
+
+```sh
+brew install --cask rancher
 ```
 
 ### fnm

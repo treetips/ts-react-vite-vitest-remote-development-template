@@ -1,10 +1,10 @@
+import App from "@src/App";
+import { VitestAppWrapper } from "@src/VitestAppWrapper";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { BrowserRouter } from "react-router-dom";
 import { describe, expect, test } from "vitest";
-import App from "./App";
-import { VitestAppWrapper } from "./VitestAppWrapper";
 
 describe("Simple working test", () => {
   test("should render correctly", () => {

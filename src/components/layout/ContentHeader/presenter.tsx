@@ -1,6 +1,6 @@
 import { Card, Typography } from "@mui/material";
+import { Layout } from "@src/components/layout/Layout";
 import { ComponentProps } from "react";
-import { Layout } from "../Layout";
 
 type Props = Pick<ComponentProps<typeof Layout>, "pageTitle">;
 

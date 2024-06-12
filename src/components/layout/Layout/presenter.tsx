@@ -15,11 +15,11 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+import { ContentHeader } from "@src/components/layout/ContentHeader";
+import { Layout } from "@src/components/layout/Layout";
 import { ComponentProps, ReactNode } from "react";
 import { VscDebug as VscDebugIcon } from "react-icons/vsc";
 import { Link, NavLink } from "react-router-dom";
-import { ContentHeader } from "../ContentHeader";
-import { Layout } from "./container";
 
 type Props = {
   /**

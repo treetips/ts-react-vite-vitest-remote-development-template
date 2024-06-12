@@ -1,8 +1,8 @@
 import { createTheme, ThemeProvider } from "@mui/material";
+import App from "@src/App";
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App";
 import "./index.scss";
 
 const theme = createTheme({});

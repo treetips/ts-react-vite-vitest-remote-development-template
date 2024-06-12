@@ -10,6 +10,7 @@
     "IronGeek.vscode-env",
     "formulahendry.auto-rename-tag",
     "usernamehw.errorlens",
-    "oderwat.indent-rainbow"
+    "oderwat.indent-rainbow",
+    "ionutvmi.path-autocomplete"
   ]
 }

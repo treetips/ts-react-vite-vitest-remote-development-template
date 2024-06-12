@@ -34,6 +34,10 @@
     "*.env.production.local": "env"
   },
   "git.mergeEditor": true,
+  "path-autocomplete.pathMappings": {
+    "@src": "${folder}/src",
+    "~public": "${folder}/public"
+  },
   // typescript
   "typescript.suggest.autoImports": true,
   "typescript.format.enable": false,
@@ -44,6 +48,7 @@
   "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
   "typescript.inlayHints.variableTypes.enabled": false,
   "typescript.implementationsCodeLens.enabled": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.referencesCodeLens.enabled": true,
   "typescript.referencesCodeLens.showOnAllFunctions": false,
   // javascript
@@ -55,6 +60,7 @@
   "javascript.inlayHints.parameterTypes.enabled": true,
   "javascript.inlayHints.propertyDeclarationTypes.enabled": true,
   "javascript.inlayHints.variableTypes.enabled": false,
+  "javascript.preferences.importModuleSpecifier": "non-relative",
   "javascript.referencesCodeLens.enabled": true,
   "javascript.referencesCodeLens.showOnAllFunctions": false,
   "markdown.validate.enabled": true,
@@ -66,14 +72,16 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
+      "source.organizeImports": "explicit",
+      "source.addMissingImports": "explicit"
     }
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": "explicit"
+      "source.organizeImports": "explicit",
+      "source.addMissingImports": "explicit"
     }
   },
   "[json]": {

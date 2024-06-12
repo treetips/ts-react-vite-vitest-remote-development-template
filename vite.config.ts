@@ -1,15 +1,15 @@
 /// <reference types="vitest" />
 
-import react from '@vitejs/plugin-react-swc';
+import react from "@vitejs/plugin-react-swc";
 import { defineConfig } from "vite";
 import checker from "vite-plugin-checker";
+import tsconfigPaths from "vite-tsconfig-paths";
 
 // https://vitejs.dev/config/
 export default defineConfig(
   (
     // https://ja.vitejs.dev/config/#%E6%9D%A1%E4%BB%B6%E4%BB%98%E3%81%8D%E8%A8%AD%E5%AE%9A
-    { command,
-    mode }
+    { command, mode }
   ) => {
     const src = command === "serve" ? "../src" : "./src";
     return {
@@ -25,13 +25,15 @@ export default defineConfig(
       },
       plugins: [
         react(),
-        mode !== "test" && checker({
-          typescript: true,
-          vueTsc: false,
-          eslint: {
-            lintCommand: `eslint "${src}/**/*.{ts,tsx}"`,
-          },
-        }),
+        tsconfigPaths(),
+        mode !== "test" &&
+          checker({
+            typescript: true,
+            vueTsc: false,
+            eslint: {
+              lintCommand: `eslint "${src}/**/*.{ts,tsx}"`,
+            },
+          }),
       ],
       test: {
         globals: true,

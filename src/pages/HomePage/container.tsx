@@ -1,6 +1,6 @@
+import { Layout } from "@src/components/layout/Layout";
+import { HomePagePresenter } from "@src/pages/HomePage";
 import { useState } from "react";
-import { HomePagePresenter } from ".";
-import { Layout } from "../../components/layout/Layout";
 
 export const HomePage = () => {
   const [count, setCount] = useState(0);

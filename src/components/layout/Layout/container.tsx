@@ -1,5 +1,5 @@
-import { LayoutPresenter } from "@src/components/layout/Layout";
-import { ReactNode, useState } from "react";
+import { LayoutPresenter } from "@src/components/layout/Layout/presenter";
+import { type ReactNode, useState } from "react";
 
 type Props = {
   pageTitle: string;

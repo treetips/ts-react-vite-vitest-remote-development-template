@@ -1,16 +1,16 @@
 {
   "recommendations": [
-    "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
+    "biomejs.biome",
     "editorconfig.editorconfig",
-    "ms-azuretools.vscode-docker",
-    "vadimcn.vscode-lldb",
-    "yzhang.markdown-all-in-one",
-    "vitest.explorer",
-    "IronGeek.vscode-env",
+    "esbenp.prettier-vscode",
     "formulahendry.auto-rename-tag",
-    "usernamehw.errorlens",
+    "ionutvmi.path-autocomplete",
+    "IronGeek.vscode-env",
+    "ms-azuretools.vscode-docker",
     "oderwat.indent-rainbow",
-    "ionutvmi.path-autocomplete"
+    "usernamehw.errorlens",
+    "vadimcn.vscode-lldb",
+    "vitest.explorer",
+    "yzhang.markdown-all-in-one"
   ]
 }

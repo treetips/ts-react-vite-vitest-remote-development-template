@@ -1,5 +1,5 @@
-import { createTheme, ThemeProvider } from "@mui/material";
-import { ReactNode, StrictMode } from "react";
+import { ThemeProvider, createTheme } from "@mui/material";
+import { type ReactNode, StrictMode } from "react";
 import { BrowserRouter } from "react-router-dom";
 
 type Props = {

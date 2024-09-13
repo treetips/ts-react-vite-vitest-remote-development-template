@@ -1,5 +1,5 @@
-import { Layout } from "@src/components/layout/Layout";
-import { HomePagePresenter } from "@src/pages/HomePage";
+import { Layout } from "@src/components/layout/Layout/container";
+import { HomePagePresenter } from "@src/pages/HomePage/presenter";
 import { useState } from "react";
 
 export const HomePage = () => {

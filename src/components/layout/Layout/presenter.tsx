@@ -15,9 +15,9 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import { ContentHeader } from "@src/components/layout/ContentHeader";
-import { Layout } from "@src/components/layout/Layout";
-import { ComponentProps, ReactNode } from "react";
+import { ContentHeader } from "@src/components/layout/ContentHeader/container";
+import type { Layout } from "@src/components/layout/Layout/container";
+import type { ComponentProps, ReactNode } from "react";
 import { VscDebug as VscDebugIcon } from "react-icons/vsc";
 import { Link, NavLink } from "react-router-dom";
 
@@ -58,7 +58,7 @@ export const LayoutPresenter = ({
   }) => {
     return (
       <Box>
-        <ListItem disablePadding component={NavLink} to={url}>
+        <ListItem disablePadding={true} component={NavLink} to={url}>
           <ListItemButton>
             <ListItemIcon>{icon}</ListItemIcon>
             <ListItemText primary={text} />
@@ -73,7 +73,7 @@ export const LayoutPresenter = ({
     <div>
       <Toolbar />
       <Divider />
-      <List disablePadding>
+      <List disablePadding={true}>
         <MenuListItem url="/" text="Home" icon={<HomeIcon />} />
         <MenuListItem
           url="/404"
@@ -107,7 +107,7 @@ export const LayoutPresenter = ({
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" noWrap component="div">
+          <Typography variant="h6" noWrap={true} component="div">
             {siteTitleText}
           </Typography>
         </Toolbar>
@@ -143,7 +143,7 @@ export const LayoutPresenter = ({
               width: drawerWidth,
             },
           }}
-          open
+          open={true}
         >
           {drawer}
         </Drawer>
@@ -164,7 +164,7 @@ export const LayoutPresenter = ({
             </Box>
           )}
 
-          {breadcrumbs?.length && (
+          {breadcrumbs && (
             <Box mt={1} mx={2}>
               <Breadcrumbs aria-label="breadcrumb">
                 <Link to="/">Home</Link>

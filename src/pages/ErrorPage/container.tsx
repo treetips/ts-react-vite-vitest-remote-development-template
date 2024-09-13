@@ -1,5 +1,5 @@
-import { Layout } from "@src/components/layout/Layout";
-import { ErrorPagePresenter } from "@src/pages/ErrorPage";
+import { Layout } from "@src/components/layout/Layout/container";
+import { ErrorPagePresenter } from "@src/pages/ErrorPage/presenter";
 
 export const ErrorPage = () => {
   return (

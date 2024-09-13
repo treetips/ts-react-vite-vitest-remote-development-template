@@ -13,7 +13,7 @@
 | Vite                  | v5      |
 | React Router          | v6      |
 | SCSS                  | latest  |
-| ESLint                | latest  |
+| Biome                 | latest  |
 | Prettier              | latest  |
 | Vitest                | latest  |
 | React Testing Library | latest  |
@@ -82,3 +82,12 @@ EOT
 ## Usage
 
 https://user-images.githubusercontent.com/12574048/172644178-72c48ca8-52f7-4f49-957e-ab966a82f14d.mp4
+
+## TIPS
+
+### Migrate ESLint to Biome
+
+```shell
+npx biome migrate eslint --write --include-inspired
+npx biome migrate prettier --write
+```

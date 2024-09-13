@@ -1,10 +1,7 @@
 {
-  "src/**/*.{js,jsx,ts,tsx}": [
+  "src/**/*.{css,json,jsonc,js,jsx,md,ts,tsx}": [
     "organize-imports-cli",
-    "eslint --cache --fix",
-    "prettier --write"
+    "biome check --write"
   ],
-  "src/**/*.{html,css,scss,md,json}": [
-    "prettier --write"
-  ]
+  "src/**/*.{html,scss}": ["prettier --write"]
 }

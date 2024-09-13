@@ -28,10 +28,11 @@ export default defineConfig(
         tsconfigPaths(),
         mode !== "test" &&
           checker({
-            typescript: true,
-            vueTsc: false,
-            eslint: {
-              lintCommand: `eslint "${src}/**/*.{ts,tsx}"`,
+            biome: {
+              command: "check",
+              build: {
+                command: "ci",
+              },
             },
           }),
       ],

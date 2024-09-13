@@ -1,1 +1,67 @@
-    "ignore": ["./node_modules", "./build"],
+{
+  "$schema": "https://biomejs.dev/schemas/1.9.0/schema.json",
+  "vcs": { "enabled": false, "clientKind": "git", "useIgnoreFile": false },
+  "files": { "ignoreUnknown": false, "ignore": [] },
+  "formatter": {
+    "enabled": true,
+    "useEditorconfig": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineEnding": "lf",
+    "lineWidth": 80,
+    "attributePosition": "auto",
+    "bracketSpacing": true
+  },
+  "organizeImports": { "enabled": true },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": false,
+      "all": true,
+      "correctness": {
+        "noUndeclaredDependencies": "off"
+      },
+      "performance": {
+        "useTopLevelRegex": "off"
+      },
+      "style": {
+        "noDefaultExport": "off",
+        "noNonNullAssertion": "off",
+        "useFilenamingConvention": "off"
+      },
+      "suspicious": {
+        "noConsole": "warn",
+        "noReactSpecificProps": "off"
+      }
+    },
+    "ignore": [
+      "**/.eslintrc.cjs",
+      "**/.husky/**",
+      "**/.git/**",
+      "**/__snapshots__/**",
+      "**/assets/**",
+      "**/build/**",
+      "**/dist/**",
+      "**/node_modules/**",
+      "**/public/**",
+      "**/static/**",
+      "**/vite.config.ts",
+      "**/vitest.setup.ts",
+      "**/dist"
+    ]
+  },
+  "javascript": {
+    "formatter": {
+      "jsxQuoteStyle": "double",
+      "quoteProperties": "asNeeded",
+      "trailingCommas": "es5",
+      "semicolons": "always",
+      "arrowParentheses": "always",
+      "bracketSameLine": false,
+      "quoteStyle": "double",
+      "attributePosition": "auto",
+      "bracketSpacing": true
+    }
+  }
+}

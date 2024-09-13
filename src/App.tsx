@@ -1,6 +1,6 @@
 import "@src/App.scss";
-import { ErrorPage } from "@src/pages/ErrorPage";
-import { HomePage } from "@src/pages/HomePage";
+import { ErrorPage } from "@src/pages/ErrorPage/container";
+import { HomePage } from "@src/pages/HomePage/container";
 import { Route, Routes } from "react-router-dom";
 
 function App() {

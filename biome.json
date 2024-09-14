@@ -48,7 +48,8 @@
       "**/static/**",
       "**/vite.config.ts",
       "**/vitest.setup.ts",
-      "**/dist"
+      "**/dist",
+      "src/env.d.ts"
     ]
   },
   "javascript": {

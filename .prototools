@@ -1,1 +1,5 @@
 node = "20.17.0"
+
+[settings]
+auto-install = true
+auto-clean = true

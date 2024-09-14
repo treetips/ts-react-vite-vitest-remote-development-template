@@ -12,8 +12,7 @@
     "format": "biome format --write",
     "lint": "biome lint --write",
     "check": "biome check --write",
-    "prepare": "husky install",
-    "lint-staged": "lint-staged --allow-empty"
+    "prepare": "lefthook install"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
@@ -37,10 +36,9 @@
     "@types/testing-library__user-event": "4.1.1",
     "@vitejs/plugin-react": "^4.2.1",
     "@vitejs/plugin-react-swc": "^3.6.0",
-    "husky": "^9.0.11",
     "jest-extended": "^4.0.2",
     "jsdom": "25.0.0",
-    "lint-staged": "^15.2.2",
+    "lefthook": "^1.7.15",
     "npm-check-updates": "17.1.1",
     "organize-imports-cli": "^0.10.0",
     "prettier": "^3.3.2",

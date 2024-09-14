@@ -2,21 +2,21 @@
 
 ## Features
 
-| Name                  | Version |
-| --------------------- | ------- |
-| VSCode                | latest  |
-| Rancher Desktop       | latest  |
-| fnm                   | latest  |
-| Node.js               | v20 LTS |
-| TypeScript            | latest  |
-| React                 | v18     |
-| Vite                  | v5      |
-| React Router          | v6      |
-| SCSS                  | latest  |
-| Biome                 | latest  |
-| Prettier              | latest  |
-| Vitest                | latest  |
-| React Testing Library | latest  |
+| Name                  | Version         |
+| --------------------- | --------------- |
+| VSCode                | latest          |
+| Rancher Desktop       | latest          |
+| proto                 | latest          |
+| Node.js               | see .prototools |
+| TypeScript            | latest          |
+| React                 | v18             |
+| Vite                  | v5              |
+| React Router          | v6              |
+| SCSS                  | latest          |
+| Biome                 | latest          |
+| Prettier              | latest          |
+| Vitest                | latest          |
+| React Testing Library | latest          |
 
 ## Requirements
 

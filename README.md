@@ -8,6 +8,7 @@
 | Rancher Desktop       | latest          |
 | proto                 | latest          |
 | Node.js               | see .prototools |
+| pnpm                  | see .prototools |
 | TypeScript            | latest          |
 | React                 | v18             |
 | Vite                  | v5              |
@@ -53,6 +54,6 @@ proto install
 ### Migrate ESLint to Biome
 
 ```shell
-npx biome migrate eslint --write --include-inspired
-npx biome migrate prettier --write
+pnpm dlx biome migrate eslint --write --include-inspired
+pnpm dlx biome migrate prettier --write
 ```

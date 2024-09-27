@@ -1,6 +1,6 @@
 {
   "name": "Node.js Remote Development Template",
-  "dockerComposeFile": "../docker-compose.yml",
+  "dockerComposeFile": "../compose.yaml",
   "service": "nodejs",
   "workspaceFolder": "/vscode/workspace",
   "customizations": {

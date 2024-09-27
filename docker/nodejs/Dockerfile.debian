@@ -2,9 +2,13 @@
 # LTS Docker Image https://hub.docker.com/_/node?tab=tags&page=1&name=gallium
 FROM node:lts-iron
 
+ARG PNPM_VERSION=9.11.0
+
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
       git exa locales && \
+    npm i -g pnpm@${PNPM_VERSION} && \
+    pnpm config set store-dir /root/.pnpm-store && \
     sh -c "$(curl -fsSL https://starship.rs/install.sh)" -y -f && \
     apt-get -y clean && \
     rm -rf /var/lib/apt/lists/*

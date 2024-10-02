@@ -1,7 +1,0 @@
-{
-  "src/**/*.{css,json,jsonc,js,jsx,md,ts,tsx}": [
-    "organize-imports-cli",
-    "biome check --write"
-  ],
-  "src/**/*.{html,scss}": ["prettier --write"]
-}

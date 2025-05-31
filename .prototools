@@ -1,5 +1,5 @@
-node = "20.17.0"
-pnpm = "9.12.0"
+node = "23.11.1"
+pnpm = "10.11.0"
 
 [settings]
 auto-clean = true

@@ -1,6 +1,6 @@
 # LTS Code Name https://nodejs.org/ja/about/releases/
 # LTS Docker Image https://hub.docker.com/_/node?tab=tags&page=1&name=gallium
-FROM node:lts-iron
+FROM node:lts
 
 ARG PNPM_VERSION=9.11.0
 

@@ -23,6 +23,9 @@ export default defineConfig(
         outDir: "../build",
         emptyOutDir: true,
       },
+      experimental: {
+        enableNativePlugin: true,
+      },
       plugins: [
         react(),
         tsconfigPaths(),

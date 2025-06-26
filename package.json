@@ -35,7 +35,7 @@
     "@types/react-dom": "^19.1.5",
     "@types/testing-library__user-event": "4.2.0",
     "@vitejs/plugin-react": "^4.5.0",
-    "@vitejs/plugin-react-swc": "^3.10.0",
+    "@vitejs/plugin-react-oxc": "^0.2.3",
     "jest-extended": "^5.0.3",
     "jsdom": "26.1.0",
     "lefthook": "^1.11.13",
@@ -44,9 +44,9 @@
     "prettier": "^3.5.3",
     "sass": "^1.89.1",
     "typescript": "^5.8.3",
-    "vite": "6.3.5",
+    "vite": "npm:rolldown-vite@7.0.2",
     "vite-plugin-checker": "^0.9.3",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.1.4"
+    "vitest": "3.2.4"
   }
 }

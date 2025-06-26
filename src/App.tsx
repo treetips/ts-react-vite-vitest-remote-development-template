@@ -1,4 +1,4 @@
-import "@src/App.scss";
+import "@src/App.css";
 import { ErrorPage } from "@src/pages/ErrorPage/container";
 import { HomePage } from "@src/pages/HomePage/container";
 import { Route, Routes } from "react-router-dom";

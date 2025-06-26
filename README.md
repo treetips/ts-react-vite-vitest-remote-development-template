@@ -13,7 +13,6 @@
 | React                 | v18             |
 | Vite                  | v5              |
 | React Router          | v6              |
-| SCSS                  | latest          |
 | Biome                 | latest          |
 | Prettier              | latest          |
 | Vitest                | latest          |

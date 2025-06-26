@@ -1,6 +1,12 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.9.4/schema.json",
-  "files": { "ignoreUnknown": false, "ignore": [] },
+  "$schema": "https://biomejs.dev/schemas/2.0.5/schema.json",
+  "files": {
+    "includes": [
+      "*.{ts,tsx,js,jsx,json,jsonc,css,graphql}",
+      "./{src,tsconfig,.vscode}/**/*.{ts,tsx,js,jsx,json,jsonc,css,graphql}"
+    ],
+    "ignoreUnknown": false
+  },
   "formatter": {
     "enabled": true,
     "useEditorconfig": true,
@@ -28,7 +34,8 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "all": true,
+      "recommended": true,
+      "a11y": "off",
       "correctness": {
         "noUndeclaredDependencies": "off"
       },
@@ -43,29 +50,9 @@
       },
       "suspicious": {
         "noConsole": "warn",
-        "noConsoleLog": "warn",
         "noReactSpecificProps": "off"
       }
-    },
-    "ignore": [
-      "**/.eslintrc.cjs",
-      "**/.husky/**",
-      "**/.git/**",
-      "**/__snapshots__/**",
-      "**/assets/**",
-      "**/build/**",
-      "**/dist/**",
-      "**/node_modules/**",
-      "**/public/**",
-      "**/static/**",
-      "**/vite.config.ts",
-      "**/vitest.setup.ts",
-      "**/dist",
-      "src/env.d.ts"
-    ]
-  },
-  "organizeImports": {
-    "enabled": true
+    }
   },
   "vcs": {
     "enabled": true,

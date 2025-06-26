@@ -8,18 +8,15 @@ import {
   Drawer,
   IconButton,
   List,
-  ListItem,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
   Toolbar,
   Typography,
 } from "@mui/material";
 import { ContentHeader } from "@src/components/layout/ContentHeader/container";
 import type { Layout } from "@src/components/layout/Layout/container";
-import type { ComponentProps, ReactNode } from "react";
+import { MenuListItem } from "@src/components/layout/MenuListItem/container";
+import type { ComponentProps } from "react";
 import { VscDebug as VscDebugIcon } from "react-icons/vsc";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 type Props = {
   /**
@@ -47,28 +44,6 @@ export const LayoutPresenter = ({
   breadcrumbs,
   children,
 }: Props) => {
-  const MenuListItem = ({
-    url,
-    text,
-    icon,
-  }: {
-    url: string;
-    text: string;
-    icon: ReactNode;
-  }) => {
-    return (
-      <Box>
-        <ListItem disablePadding={true} component={NavLink} to={url}>
-          <ListItemButton>
-            <ListItemIcon>{icon}</ListItemIcon>
-            <ListItemText primary={text} />
-          </ListItemButton>
-        </ListItem>
-        <Divider />
-      </Box>
-    );
-  };
-
   const drawer = (
     <div>
       <Toolbar />

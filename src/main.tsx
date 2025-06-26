@@ -1,4 +1,4 @@
-import { ThemeProvider, createTheme } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
 import App from "@src/App";
 import "@src/index.css";
 import { StrictMode } from "react";

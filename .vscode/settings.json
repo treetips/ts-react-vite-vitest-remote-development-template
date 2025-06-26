@@ -75,9 +75,6 @@
   "workbench.editor.enablePreview": false,
   "workbench.tree.indent": 16,
   "workbench.tree.renderIndentGuides": "always",
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }

@@ -44,9 +44,9 @@
     "prettier": "^3.5.3",
     "sass": "^1.89.1",
     "typescript": "^5.8.3",
-    "vite": "6.3.5",
+    "vite": "npm:rolldown-vite@7.0.2",
     "vite-plugin-checker": "^0.9.3",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.1.4"
+    "vitest": "3.2.4"
   }
 }

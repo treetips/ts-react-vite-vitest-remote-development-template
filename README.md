@@ -2,21 +2,21 @@
 
 ## Features
 
-| Name                  | Version         |
-| --------------------- | --------------- |
-| VSCode                | latest          |
-| Rancher Desktop       | latest          |
-| proto                 | latest          |
-| Node.js               | see .prototools |
-| pnpm                  | see .prototools |
-| TypeScript            | latest          |
-| React                 | v18             |
-| Vite                  | v5              |
-| React Router          | v6              |
-| Biome                 | latest          |
-| Prettier              | latest          |
-| Vitest                | latest          |
-| React Testing Library | latest          |
+| Name                  | Version        |
+| --------------------- | -------------- |
+| VSCode                | latest         |
+| Rancher Desktop       | latest         |
+| mise                  | latest         |
+| Node.js               | see .mise.toml |
+| bun                   | see .mise.toml |
+| TypeScript            | latest         |
+| React                 | v18            |
+| Vite                  | v5             |
+| React Router          | v6             |
+| Biome                 | latest         |
+| Prettier              | latest         |
+| Vitest                | latest         |
+| React Testing Library | latest         |
 
 ## Setup
 
@@ -32,20 +32,20 @@ brew install --cask \
   rancher
 ```
 
-### proto
+### mise
 
-#### Install proto
+#### Install mise
 
 ```sh
-brew tap moonrepo/proto https://github.com/moonrepo/proto
-brew install proto
-proto setup
+brew install mise
+echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
 ```
 
 #### Install project dependencies
 
 ```sh
-proto install
+mise trust
+mise i
 ```
 
 ## TIPS
@@ -53,6 +53,6 @@ proto install
 ### Migrate ESLint to Biome
 
 ```shell
-pnpm dlx biome migrate eslint --write --include-inspired
-pnpm dlx biome migrate prettier --write
+bunx biome migrate eslint --write --include-inspired
+bunx biome migrate prettier --write
 ```

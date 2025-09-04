@@ -1,3 +1,9 @@
 #!/bin/sh
-pnpm ncu -u
-rm -rf ./package-lock.json ./pnpm-lock.yaml ./node_modules && pnpm i
+bun ncu -u
+rm -rf \
+  ./package-lock.json \
+  ./pnpm-lock.yaml \
+  ./bun.lock \
+  ./bun.lockb \
+  ./node_modules && \
+  bun i

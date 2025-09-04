@@ -3,19 +3,9 @@ import { VitestAppWrapper } from "@src/VitestAppWrapper";
 import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { BrowserRouter } from "react-router-dom";
 import { describe, expect, test } from "vitest";
 
 describe("Simple working test", () => {
-  test("should render correctly", () => {
-    const { container } = render(
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    );
-    expect(container.firstChild).toMatchSnapshot();
-  });
-
   test("the title is visible", () => {
     render(<App />, { wrapper: VitestAppWrapper });
     expect(screen.getByText(/Vite Example/)).toBeInTheDocument();

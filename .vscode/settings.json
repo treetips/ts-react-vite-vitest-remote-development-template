@@ -54,6 +54,7 @@
     "**/*.svg": true,
     ".idea": true,
     "build": true,
+    "bun.lock": true,
     "bun.lockb": true,
     "package-lock.json": true,
     "pnpm-lock.yaml": true,

@@ -10,9 +10,9 @@
 | Node.js               | see .mise.toml |
 | bun                   | see .mise.toml |
 | TypeScript            | latest         |
-| React                 | v18            |
-| Vite                  | v5             |
-| React Router          | v6             |
+| React                 | v19            |
+| Vite                  | v8             |
+| React Router          | v7             |
 | Biome                 | latest         |
 | Prettier              | latest         |
 | Vitest                | latest         |

@@ -4,5 +4,9 @@
     "./tsconfig/tsconfig.paths.json"
   ],
   "include": ["src"],
-  "references": [{ "path": "./tsconfig/tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig/tsconfig.node.json" }],
+  "compilerOptions": {
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force"
+  }
 }

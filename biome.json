@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.7/schema.json",
   "files": {
     "includes": [
       "*.{ts,tsx,js,jsx,json,jsonc,css,graphql}",
@@ -46,7 +46,8 @@
         "noDefaultExport": "off",
         "noImplicitBoolean": "off",
         "noNonNullAssertion": "off",
-        "useFilenamingConvention": "off"
+        "useFilenamingConvention": "off",
+        "useImportType": "off"
       },
       "suspicious": {
         "noConsole": "warn",
